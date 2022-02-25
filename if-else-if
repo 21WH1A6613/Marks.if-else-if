@@ -1,0 +1,29 @@
+#include<stdio.h>
+#include<math.h>
+int main()
+{
+	int m1,m2,m3,total,avg;
+	printf("enter marks of student: ");
+	scanf("%d %d %d",&m1,&m2,&m3);
+	total=m1+m2+m3; avg=total/3;
+	if(avg>=85 && avg<=100)
+	{
+		printf("Grade A");
+	}
+	else if(avg>=70 && avg<=84)
+	{
+		printf("Grade B");
+	}
+	else if(avg>=55 && avg<=69)
+	{
+		printf("Grade C");
+	}
+	else if(avg>=40 && avg<=54)
+	{
+		printf("Grade D");
+	}
+	else
+	{
+		printf("Grade F");
+	}
+}
